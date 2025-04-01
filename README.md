@@ -1,38 +1,105 @@
-# GVP-LLMAgents-Team05
+# GVP-LLMAgents-Team05 Documentation
 
-# Opening Page
-1. ```pip install streamlit PyPDF2 python-dotenv``` 
-2. ```streamlit run job_description.py```
+## Opening the Application
 
+To set up and run the application, follow these steps:
 
-# Necessary requirements
-1. Require an OpenAI API Key.
-2. Generate Gmail App Password for email to be used.
-3. Have access to Google Cloud Console.
-   
-# Google Cloud Console
-1. Go to Google Cloud Console and enable Google Forms API and Google Drive API for a new project.
-2. Create a new project in Google Cloud Console.
-3. Go to Enabled API and search for Google Forms API, Google Drive API and enable them.
-4. Enable OAuth Consent Screen.
-5. Go to Credentials.
-6. Create new Credentials and select Service Account.
-7. After creating account , Create Key after selecting account.
-8. Download the Key
-9. Add the file to the Git
+1. Install the necessary dependencies by running:
 
-# Question and Form Generator
-1. Install the necessary libraries present in requirements.txt using pip install -r requirements.txt
-2. Go the code present in send_assessment.py
-3. Make necessary changes for the path ie  copy the path of service_account.json and enter your own OpenAi Key and add email for the necessary authorized email to edit and view responses.
-4. Now run the code using streamlit run send_assessment.py
-5. The Google Form will be generated along with a text file containing the questions and the correct answers.
-6. From the Authorized email, go to the Google Form and enable quiz , choose the correct answers from text file and assign the marks.
-7. Now send the quiz to the participants.
+```pip install streamlit PyPDF2 python-dotenv```
 
-# Extraction and Email Generation
-1. Now copy the link of the Spreadsheet assosciated with the Google Form and add the sheet to Git
-2. Replace the path in the .env file 
-3. Replace the gmail address and gmail app password in the .env
-4. streamlit run evaluate_performance.py
-5. The emails will be sent to the qualified canddiates.
+2. Launch the application with:
+
+```streamlit run job_description.py```
+
+## Prerequisites
+
+Before proceeding, ensure you have the following:
+
+- **OpenAI API Key** - Required for AI-based functionalities.
+
+- **Gmail App Password** - Generate an App Password for secure email sending.
+
+- **Access to Google Cloud Console** - Necessary for enabling APIs and managing credentials.
+
+## Google Cloud Console Setup
+
+To enable the necessary services and configure credentials, follow these steps:
+
+1. Navigate to Google Cloud Console.
+
+2. Enable Google Forms API and Google Drive API by searching for them in the "Enabled APIs & Services" section.
+
+3. Create a new project in Google Cloud Console.
+
+4. Set up the OAuth Consent Screen and configure it for your application.
+
+5. Go to Credentials and create a Service Account:
+
+- After creating the account, generate a new Key and download it as a JSON file.
+
+- Add this JSON key file to your project repository.
+
+Question and Form Generation
+
+To generate Google Forms-based assessments, follow these steps:
+
+Install the required libraries from requirements.txt:
+
+pip install -r requirements.txt
+
+Navigate to send_assessment.py and make necessary modifications:
+
+Set the path of service_account.json.
+
+Enter your OpenAI API Key.
+
+Add the authorized email that can edit and view responses.
+
+Run the script to generate the Google Form:
+
+streamlit run send_assessment.py
+
+A Google Form will be created along with a text file containing the questions and correct answers.
+
+From the authorized email, access the Google Form:
+
+Enable Quiz Mode.
+
+Manually select correct answers from the generated text file.
+
+Assign marks to the questions.
+
+Share the quiz link with the participants.
+
+Evaluation and Email Generation
+
+To evaluate participant responses and send emails to qualified candidates:
+
+Copy the link of the Google Sheets associated with the Google Form.
+
+Add the spreadsheet to your project repository.
+
+Update the .env file:
+
+Set the correct spreadsheet path.
+
+Enter the Gmail address and Gmail App Password.
+
+Run the performance evaluation script:
+
+streamlit run evaluate_performance.py
+
+The system will automatically send emails to qualified candidates based on their performance.
+
+Conclusion
+
+By following the above steps, you can:
+
+Generate AI-powered assessments.
+
+Automate quiz distribution and evaluation.
+
+Efficiently notify qualified candidates via email.
+
+This documentation ensures a smooth setup and execution of the GVP-LLMAgents-Team05 system. For any troubleshooting, refer to the respective sections or consult the project team.
