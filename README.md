@@ -3,7 +3,7 @@
 ## cloning the repository
 
 To set up the code clone the repository to your local machine
-   ```sh
+   ```git
    git clone https://github.com/789-raghu/GVP-LLMAgents-Team05
    ```
 Open the project directory in your terminal
@@ -17,11 +17,11 @@ Open the project directory in your terminal
 To set up and run the application, follow these steps:
 
 1. Install the necessary dependencies by running:
-   ```sh
+   ```python
    pip install streamlit PyPDF2 python-dotenv
    ```
 2. Launch the application with:
-   ```sh
+   ```python
    streamlit run job_description.py
    ```
 
@@ -53,7 +53,7 @@ To enable the necessary services and configure credentials, follow these steps:
 To generate Google Forms-based assessments, follow these steps:
 
 1. Install the required libraries from `requirements.txt`:
-   ```sh
+   ```python
    pip install -r requirements.txt
    ```
 2. Navigate to `send_assessment.py` and make necessary modifications:
@@ -61,7 +61,7 @@ To generate Google Forms-based assessments, follow these steps:
    - Enter your **OpenAI API Key**.
    - Add the **authorized email** that can edit and view responses.
 3. Run the script to generate the Google Form:
-   ```sh
+   ```python
    streamlit run send_assessment.py
    ```
 4. A Google Form will be created along with a text file containing the questions and correct answers.
@@ -82,7 +82,7 @@ To evaluate participant responses and send emails to qualified candidates:
    - Set the correct **spreadsheet path**.
    - Enter the **Gmail address** and **Gmail App Password**.
 4. Run the performance evaluation script:
-   ```sh
+   ```python
    streamlit run evaluate_performance.py
    ```
 5. The system will automatically send emails to qualified candidates based on their performance.
