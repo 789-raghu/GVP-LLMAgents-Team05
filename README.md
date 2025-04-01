@@ -1,8 +1,8 @@
 # GVP-LLMAgents-Team05
 
 # Opening Page
-1. pip install streamlit PyPDF2 python-dotenv 
-2. streamlit run job_description.py 
+1. ```pip install streamlit PyPDF2 python-dotenv``` 
+2. ```streamlit run job_description.py```
 
 
 # Necessary requirements
