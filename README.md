@@ -94,5 +94,3 @@ By following the above steps, you can:
 - Generate AI-powered assessments.
 - Automate quiz distribution and evaluation.
 - Efficiently notify qualified candidates via email.
-
-This documentation ensures a smooth setup and execution of the **GVP-LLMAgents-Team05** system. For any troubleshooting, refer to the respective sections or consult the project team.
