@@ -1,5 +1,18 @@
 # GVP-LLMAgents-Team05 Documentation
 
+## cloning the repository
+
+To set up the code clone the repository to your local machine
+   ```sh
+   git clone https://github.com/789-raghu/GVP-LLMAgents-Team05
+   ```
+Open the project directory in your terminal
+   ```sh
+   cd GVP-LLMAgents-Team05
+   ```
+
+---
+
 ## Opening the Application
 To set up and run the application, follow these steps:
 
